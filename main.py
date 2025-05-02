@@ -1,5 +1,8 @@
 from pkg.plugin.context import register, handler, llm_func, BasePlugin, APIHost, EventContext
 from pkg.plugin.events import *  # 导入事件类
+import re
+import json
+import http.client
 
 
 # 注册插件
