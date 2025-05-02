@@ -40,3 +40,20 @@
 ## 使用
 
 <!-- 插件开发者自行填写插件使用说明 -->
+
+### lagrange添加配置
+```
+    "Implementations": [
+        // ......你自己的设置...
+        {
+            "Type": "Http",
+            "Host": "lagrange",
+            "Port": 2333,
+            "AccessToken": ""
+        }
+    ]
+```
+### 修改main.py中的19行与上一步内容一致
+https://github.com/doubleJazzCat/CuteVideo/blob/dc7ca9e35cf05e8563bba082844dc5250767cacc/main.py#L19
+### 我这边使用容器运行, 不对外映射端口, 所以host地址使用的是容器地址"lagrange", 且不使用"AccessToken"
+### 感谢[小渡客API](https://api.dwo.cc/)提供的接口
