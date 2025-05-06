@@ -49,15 +49,15 @@ class CuteVideo(BasePlugin):
             return False
 
     # 当收到个人消息时触发
-    @handler(PersonNormalMessageReceived)
-    async def person_normal_message_received(self, ctx: EventContext):
-        # 这里的 event 即为 PersonNormalMessageReceived 的对象
-        if self.command_pattern.match(ctx.event.text_message):
-            if not await self.send_msg("private", "user_id", ctx.event.launcher_id):
-                # 回复消息
-                ctx.add_return("reply", ["抱歉，发送视频失败了，请稍后再试~"])
-            # 阻止该事件默认行为（向接口获取回复）
-            ctx.prevent_default()
+    # @handler(PersonNormalMessageReceived)
+    # async def person_normal_message_received(self, ctx: EventContext):
+    #     # 这里的 event 即为 PersonNormalMessageReceived 的对象
+    #     if self.command_pattern.match(ctx.event.text_message):
+    #         if not await self.send_msg("private", "user_id", ctx.event.launcher_id):
+    #             # 回复消息
+    #             ctx.add_return("reply", ["抱歉，发送视频失败了，请稍后再试~"])
+    #         # 阻止该事件默认行为（向接口获取回复）
+    #         ctx.prevent_default()
 
     # 当收到群消息时触发
     @handler(GroupNormalMessageReceived)
