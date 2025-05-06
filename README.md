@@ -56,4 +56,4 @@
 ### 修改main.py中的22行与上一步内容一致
 https://github.com/doubleJazzCat/CuteVideo/blob/dc0cb9e88b8c292aa83c7aa1c77d459afea3dbae/main.py#L22
 ### 我这边使用容器运行, 不对外映射端口, 所以host地址使用的是容器地址"lagrange", 且不使用"AccessToken"
-### 感谢[小渡客API](https://api.dwo.cc/)提供的接口
+### 感谢[桑帛云API](https://api.lolimi.cn/)提供的接口
