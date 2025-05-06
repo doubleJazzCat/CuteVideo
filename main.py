@@ -26,8 +26,8 @@ class CuteVideo(BasePlugin):
                 "message": {
                     "type": "video",
                     "data": {
-                        "file": "https://api.dwo.cc/api/videos",
-                        "url": "https://api.dwo.cc/api/videos"
+                        "file": "https://api.lolimi.cn/API/xjj/xjj.php",
+                        "url": "https://api.lolimi.cn/API/xjj/xjj.php"
                     }
                 }
             })
